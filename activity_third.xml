@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -7,14 +6,40 @@
     android:layout_height="match_parent"
     android:background="#FFDDCC">
 
+    <!-- Message de fin -->
+    <TextView
+        android:id="@+id/finalMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Thank you  !"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="80dp"/>
+
+    <!-- Une image décorative -->
+    <ImageView
+        android:id="@+id/finalImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/image"
+        app:layout_constraintTop_toBottomOf="@id/finalMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <!-- Bouton Previous -->
     <Button
         android:id="@+id/previousButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Previous"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/finalImage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="40dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
